@@ -1,0 +1,20 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Attach to packager",
+            "cwd": "${workspaceFolder}",
+            "type": "reactnative",
+            "request": "attach"
+        }
+    ]
+}
+//This lets us debug remotely in VSCode
+/*
+    1. Ctrl M to start Remote Debugging on Android Emu
+    2. Debug Menu on VS Code, and click Run with the option "Attach to Package"
+    3. Should start the debug process
+*/
