@@ -13,7 +13,7 @@ import {
   ImageBackground,
 } from "react-native";
 
-function WelcomeScreen(props) {
+const WelcomeScreen = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <ImageBackground
@@ -29,7 +29,11 @@ function WelcomeScreen(props) {
         </View>
 
         <View style={styles.loginButton}>
-          <Button color="#fc5c65" title="Login" />
+          <Button
+            color="#fc5c65"
+            title="Login"
+            onPress={() => navigation.navigate("ImageScreen")}
+          />
         </View>
 
         <View style={styles.registerButton}>
@@ -38,7 +42,7 @@ function WelcomeScreen(props) {
       </ImageBackground>
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {
