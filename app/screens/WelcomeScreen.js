@@ -32,12 +32,16 @@ const WelcomeScreen = ({ navigation }) => {
           <Button
             color="#fc5c65"
             title="Login"
-            onPress={() => navigation.navigate("ImageScreen")}
+            onPress={() => navigation.navigate("LoginScreen")}
           />
         </View>
 
         <View style={styles.registerButton}>
-          <Button color="#4ecdc4" title="Register"></Button>
+          <Button
+            color="#4ecdc4"
+            title="Register"
+            onPress={() => navigation.navigate("RegisterScreen")}
+          ></Button>
         </View>
       </ImageBackground>
     </View>
