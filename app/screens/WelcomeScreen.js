@@ -12,6 +12,7 @@ import {
   Alert,
   ImageBackground,
 } from "react-native";
+import LogoComponent from "../../components/LogoComponent";
 
 const WelcomeScreen = ({ navigation }) => {
   return (
@@ -20,13 +21,10 @@ const WelcomeScreen = ({ navigation }) => {
         source={require("../assets/background.jpg")}
         style={styles.background}
       >
-        <View style={styles.backgroundContainer}>
-          <Image
-            source={require("../assets/logo-red.png")}
-            style={styles.logo}
-          ></Image>
-          <Text> Sell What You Don't Need</Text>
-        </View>
+        <LogoComponent
+          containerStyle={styles.backgroundContainer}
+          logoStyle={styles.logo}
+        ></LogoComponent>
 
         <View style={styles.loginButton}>
           <Button
